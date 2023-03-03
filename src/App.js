@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import NotFound from "./components/NotFound";
 import ProductDetails from "./components/ProductDetails";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
@@ -13,6 +14,7 @@ function App() {
         <Route path="/posts" element={<Posts />}>
           <Route path=":id" element={<ProductDetails />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
