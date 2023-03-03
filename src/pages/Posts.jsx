@@ -1,7 +1,13 @@
 import React from "react";
-
+import Layout from "../components/Layout";
+import { Outlet } from "react-router-dom";
 const Posts = () => {
-  return <div>Posts</div>;
+  return (
+    <Layout>
+      Posts
+      <Outlet />
+    </Layout>
+  );
 };
 
 export default Posts;
